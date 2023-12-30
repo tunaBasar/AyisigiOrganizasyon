@@ -1,24 +1,10 @@
-@model List<AyisigiApp.Models.Product>
-<!DOCTYPE html>
-<html lang="en">
+@model List<Product>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    @foreach(AyisigiApp.Models.Product prd in Model)
+<div class="row my-3">
+    @foreach (Product prd in Model)
     {
-        <div>
-            <h3>@prd.ProductName</h3>
-            <p>@prd.ProductPrice</p>
-            <p>
-                <a href="/Product/Get/@prd.ProductId">Get Details</a>
-            </p>
-        </div>
-    }
-</body>
 
-</html>
+        <partial name="_ProductCard" model="@prd" />
+
+    }
+</div> 
