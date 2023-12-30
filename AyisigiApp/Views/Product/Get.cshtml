@@ -4,17 +4,11 @@
 <h3>@Model.ProductName</h3>
 <p>@Model.ProductPrice</p>
 <div class="btn-group">
-    <a class="btn btn-danger" asp-controller="Home" asp-action="Index">
+    <a class="btn btn-warning" asp-controller="Home" asp-action="Index">
         <i class="fa-solid fa-house"></i>
         Home</a>
-    <a class="btn btn-outline-danger" asp-controller="Product" asp-action="Index">
+    <a class="btn btn-outline-warning" asp-controller="Product" asp-action="Index">
         <i class="fa-solid fa-list"></i>
         Wedding
     </a>
 </div>
-
-@section Header {
-    <div>
-        Only for get header
-    </div>
-}

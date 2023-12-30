@@ -125,3 +125,7 @@ C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\obj\Debug\net8.0\Ayi
 C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\obj\Debug\net8.0\AyisigiApp.csproj.CopyComplete
 C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\AyisigiApp.staticwebassets.runtime.json
 C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\libman.json
+C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Entities.dll
+C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Entities.pdb
+C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Repositories.dll
+C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Repositories.pdb
