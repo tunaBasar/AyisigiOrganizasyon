@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZYyMA4902t+8T1oYfqa8BuCnT95X4a6K4Os8LzGOww8=",
+  "Hash": "GdmtIxhbxqDb63dx2UzVGrJbXPjqcV1z0bSMDKXfniE=",
   "Source": "AyisigiApp",
   "BasePath": "_content/AyisigiApp",
   "Mode": "Default",
@@ -53,25 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\error.html"
-    },
-    {
-      "Identity": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\wedding_1.png",
-      "SourceId": "AyisigiApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\",
-      "BasePath": "_content/AyisigiApp",
-      "RelativePath": "images/wedding_1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\wedding_1.png"
     },
     {
       "Identity": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\js\\site.js",

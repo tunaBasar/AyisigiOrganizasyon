@@ -1,4 +1,4 @@
-   
+<!--   
 <nav class="navbar bg-dark border-bottom navbar-expand-lg bg-body-tertiary"data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" asp-controller="Home" asp-action="Index">Home</a>
@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" asp-controller="Product" asp-action="Index">Weddings</a>
+          <a class="nav-link active" aria-current="page" asp-controller="Product" asp-action="Index">Weddings(@@await Component.InvokeAsync("ProductSummary"))</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" asp-controller="Category" asp-action="Index">Categories</a>
@@ -19,5 +19,31 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
+  </div>
+</nav>
+-->
+
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark p-4">
+    <bay class="baybar">
+      <div class="logo"><img src="images/ayışığılogo (1).png" alt=""></div>
+      <div class="links"> 
+        <a class="custom-btn btn-3" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+        <a class="custom-btn btn-3" asp-controller="Product" asp-action="Index">Weddings(@await Component.InvokeAsync("ProductSummary"))</a>
+        <a class="custom-btn btn-3" asp-controller="Category" asp-action="Index">Category</a>
+        <a class="custom-btn btn-3" href="">İletişim</a>
+        <a class="custom-btn btn-3" href=""><i class="bi bi-box-arrow-in-right"></i>
+
+          Kullanıcı Girişi</a>
+      </div>
+    </bay>
+  </div>
+</div>
+<nav class="navbar">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 </nav>

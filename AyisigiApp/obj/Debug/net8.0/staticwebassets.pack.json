@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\html\\error.html"
     },
     {
-      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\wedding_1.png",
-      "PackagePath": "staticwebassets\\images\\wedding_1.png"
-    },
-    {
       "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

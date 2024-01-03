@@ -129,3 +129,5 @@ C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Ent
 C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Entities.pdb
 C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Repositories.dll
 C:\Users\ymanb\Desktop\Chest\WTG\MVC\dugunDernek\AyisigiApp\bin\Debug\net8.0\Repositories.pdb
+C:\Users\ymanb\Desktop\Chest\WTG\mvc\dugunDernek\AyisigiApp\bin\Debug\net8.0\Services.dll
+C:\Users\ymanb\Desktop\Chest\WTG\mvc\dugunDernek\AyisigiApp\bin\Debug\net8.0\Services.pdb
