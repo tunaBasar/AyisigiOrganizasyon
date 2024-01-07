@@ -1,5 +1,7 @@
-﻿using Entities.Models;
+﻿using System.Reflection;
+using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Repositories.Config;
 
 namespace Repositories;
 
@@ -7,6 +9,7 @@ public class RepositoryContext : DbContext
 {
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
+    public DbSet<Category> Customers { get; set; }
 
     public RepositoryContext(DbContextOptions<RepositoryContext> options)
     : base(options)
@@ -17,20 +20,7 @@ public class RepositoryContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.Entity<Product>()
-        .HasData(
-               new Product() { ProductId = 1, ProductName = "Ottoman Wedding", ProductPrice = 30_000 },
-               new Product() { ProductId = 2, ProductName = "Romanian Wedding", ProductPrice = 32_000 },
-               new Product() { ProductId = 3, ProductName = "Russian Wedding", ProductPrice = 20_000 },
-               new Product() { ProductId = 4, ProductName = "French Wedding", ProductPrice = 15_000 },
-               new Product() { ProductId = 5, ProductName = "Standart Turkish Wedding", ProductPrice = 7_000 }
-        );
-
-        modelBuilder.Entity<Category>()
-        .HasData(
-               new Category() { CategoryId = 1, CategoryName = "Wedding" },
-               new Category() { CategoryId = 2, CategoryName = "Party" }
-        );
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 }
 

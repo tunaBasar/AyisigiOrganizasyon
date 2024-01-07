@@ -1,0 +1,51 @@
+@{
+    Layout = "_Layout1";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <title>Your Page Title</title>
+    <style>
+        body {
+            background-image: url("/images/NordicWedding.png");
+            min-height: 100vh;
+            background-color: #AF8A49;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: rgb(162, 24, 24) !important;
+        }
+    </style>
+</head>
+
+<body class="body1">
+    <div class="custom-container">
+        <div class="container d-flex justify-content-center">
+            <div class="login-container">
+                <h2 class="mb-3">Giriş</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Kullanıcı Adı</label>
+                        <input type="email" class="form-control" id="username" placeholder="Enter Your UserName"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Şifre</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Giriş</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

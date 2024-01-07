@@ -1,0 +1,36 @@
+@model Customer
+
+<div class="text-center">
+    <div class="display-6">Güncelle</div>
+</div>
+
+<form method="post" asp-action="Update">
+
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <input type="hidden" asp-for="CustomerId"/>
+    <div class="form-group my-3">
+        <label asp-for="CustomerName"></label>
+        <input asp-for="CustomerName" class="form-control" placeholder="Customer Name" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="CustomerMail"></label>
+        <input asp-for="CustomerMail" class="form-control" placeholder="Mail" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="CustomerPassword"></label>
+        <input asp-for="CustomerPassword" class="form-control" placeholder="Password" />
+    </div>
+    <div class="form-group my-3">
+        <div class="btn-group">
+            <button class="btn btn-warning" type="submit">
+                <i class="fa fa-save"></i>
+                Güncelle
+                </button>
+            <a asp-action="Index" class="btn btn-outline-warning">
+                <i class="fa fa-list"></i>
+                Müşteriler
+            </a>
+        </div>
+    </div>
+</form>

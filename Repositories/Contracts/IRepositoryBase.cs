@@ -10,5 +10,7 @@ namespace Repositories.Contracts
         void Create(T entitiy);
 
         void Remove(T entitiy);
+
+        void Update(T entitiy);
     }
 }

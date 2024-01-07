@@ -28,10 +28,10 @@
     <bay class="baybar">
       <div class="logo"><img src="images/ayışığılogo (1).png" alt=""></div>
       <div class="links"> 
-        <a class="custom-btn btn-3" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
-        <a class="custom-btn btn-3" asp-controller="Product" asp-action="Index">Weddings(@await Component.InvokeAsync("ProductSummary"))</a>
-        <a class="custom-btn btn-3" asp-controller="Category" asp-action="Index">Category</a>
-        <a class="custom-btn btn-3" href="">İletişim</a>
+        <a class="custom-btn btn-3" asp-page="/Cart">Sepet</a>
+        <a class="custom-btn btn-3" asp-controller="Product" asp-action="Index">Ürünler</a>
+        <a class="custom-btn btn-3" asp-controller="Category" asp-action="Index">Kategoriler</a>
+        <a class="custom-btn btn-3" asp-page="/Contact">İletişim</a>
         <a class="custom-btn btn-3" href=""><i class="bi bi-box-arrow-in-right"></i>
 
           Kullanıcı Girişi</a>

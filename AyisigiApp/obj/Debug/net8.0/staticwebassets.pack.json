@@ -5,8 +5,84 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\css\\site1.css",
+      "PackagePath": "staticwebassets\\css\\site1.css"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\html\\error.html",
       "PackagePath": "staticwebassets\\html\\error.html"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\1.png",
+      "PackagePath": "staticwebassets\\images\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\2.png",
+      "PackagePath": "staticwebassets\\images\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\3.png",
+      "PackagePath": "staticwebassets\\images\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\4.png",
+      "PackagePath": "staticwebassets\\images\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\5.png",
+      "PackagePath": "staticwebassets\\images\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\6.png",
+      "PackagePath": "staticwebassets\\images\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\7.png",
+      "PackagePath": "staticwebassets\\images\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\AsianWedding.png",
+      "PackagePath": "staticwebassets\\images\\AsianWedding.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\ChieneseWedding.png",
+      "PackagePath": "staticwebassets\\images\\ChieneseWedding.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\NordicWedding.png",
+      "PackagePath": "staticwebassets\\images\\NordicWedding.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\ayışığılogo (1).png",
+      "PackagePath": "staticwebassets\\images\\ayışığılogo (1).png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\bayhan.jpg",
+      "PackagePath": "staticwebassets\\images\\bayhan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\mainfoto.png",
+      "PackagePath": "staticwebassets\\images\\mainfoto.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\nadire.jpg",
+      "PackagePath": "staticwebassets\\images\\nadire.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\ottomanweddingchair.png",
+      "PackagePath": "staticwebassets\\images\\ottomanweddingchair.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\ottomanweddingsaloon.png",
+      "PackagePath": "staticwebassets\\images\\ottomanweddingsaloon.png"
+    },
+    {
+      "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\images\\tuna.jpg",
+      "PackagePath": "staticwebassets\\images\\tuna.jpg"
     },
     {
       "Id": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\js\\site.js",
