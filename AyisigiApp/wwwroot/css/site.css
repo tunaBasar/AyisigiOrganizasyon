@@ -62,7 +62,7 @@ body {
 /*button animation*/
 
 .custom-btn {
-    width: 130px;
+    width: 100px;
     height: 40px;
     color: #CAD1DC;
     border-radius: 5px;
@@ -82,12 +82,9 @@ body {
 .btn-3 {
     background: #AF8A49;
     background: linear-gradient(45deg, #AF8A49 20%, #af8a4941 100%);
-    width: 210px;
-    /* .custom-btn ile genişliği eşleştirin */
+    width: 170px;
     height: 50px;
-    /* .custom-btn ile yüksekliği eşleştirin */
-    line-height: 52px;
-    /* Metni düğme içinde dikey olarak hizalamak için ayarlayın */
+    line-height: 53px;
     padding: 0;
     border: none;
 }
@@ -162,6 +159,17 @@ body {
 
 .btn-3 span:hover:after {
     width: 100%;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+}
+
+.solayasla {
+    text-align: left;
 }
 
 

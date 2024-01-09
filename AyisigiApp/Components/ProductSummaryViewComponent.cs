@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 using Repositories;
 using Services.Contracts;
 
-namespace AyisigiApp.Components
+namespace StoreApp.Components
 {
-    public class ProductSummaryViewComponent :ViewComponent
+    public class ProductSummaryViewComponent : ViewComponent
     {
-        private readonly  IServiceManager _manager;
+        private readonly IServiceManager _manager;
 
         public ProductSummaryViewComponent(IServiceManager manager)
         {
@@ -15,7 +15,7 @@ namespace AyisigiApp.Components
 
         public string Invoke()
         {
-            return _manager.ProductService.GetAllProduct(false).Count().ToString();
+            return _manager.ProductService.GetAllProducts(false).Count().ToString();
         }
     }
 }

@@ -9,26 +9,28 @@ namespace Repositories
 
         private readonly ICategoryRepository _categoryRepository;
 
-        private readonly ICustomerRepository _customerRepository;
+        private readonly IOrderRepository _orderRepository;
+
+       
 
 
 
         public RepositoryManager(IProductRepository 
         productRepository,RepositoryContext context,
-        ICategoryRepository categoryRepository,
-        ICustomerRepository customerRepository)
+        ICategoryRepository categoryRepository,IOrderRepository orderRepository)
         {
             _context = context;
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
-            _customerRepository=customerRepository;
+            _orderRepository=orderRepository;
+            
         }
 
         public IProductRepository Product => _productRepository;
 
         public ICategoryRepository Category => _categoryRepository;
 
-        public ICustomerRepository Customer => _customerRepository;
+        public IOrderRepository Order =>  _orderRepository;
 
         public void Save()
         {

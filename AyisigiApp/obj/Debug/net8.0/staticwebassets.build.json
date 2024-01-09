@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UdAuNJdSjYijkAGTkz7si6AvufPmTfQgryApmqxjo8k=",
+  "Hash": "8GNuD2UHuVeFb9/RPmAJ0HHC+eo8P5L/ialcTZx+fQs=",
   "Source": "AyisigiApp",
   "BasePath": "_content/AyisigiApp",
   "Mode": "Default",
@@ -34,25 +34,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\css\\site1.css",
-      "SourceId": "AyisigiApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\",
-      "BasePath": "_content/AyisigiApp",
-      "RelativePath": "css/site1.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site1.css"
     },
     {
       "Identity": "C:\\Users\\ymanb\\Desktop\\Chest\\WTG\\MVC\\dugunDernek\\AyisigiApp\\wwwroot\\css\\styles.css",

@@ -1,14 +1,16 @@
 using Entities.Dtos;
 using Entities.Models;
+using Entities.RequestParameters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Services.Contracts;
-using SQLitePCL;
+using AyisigiApp.Models;
 
 namespace AyisigiApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin")]
     public class ProductController : Controller
     {
         private readonly IServiceManager _manager;
@@ -18,51 +20,67 @@ namespace AyisigiApp.Areas.Admin.Controllers
             _manager = manager;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromQuery] ProductRequestParameters p)
         {
-            var model = _manager.ProductService.GetAllProduct(false);
-            return View(model);
+            ViewData["Title"] = "Ürünler";
+
+            var products = _manager.ProductService.GetAllProductsWithDetails(p);
+            var pagination = new Pagination()
+            {
+                CurrenPage = p.PageNumber,
+                ItemsPerPage = p.PageSize,
+                TotalItems = _manager.ProductService.GetAllProducts(false).Count()
+            };
+            return View(new ProductListViewModel()
+            {
+                Products = products,
+                Pagination = pagination
+            });
         }
 
         public IActionResult Create()
         {
-            ViewBag.Categories = GetCategoriesList();
+            TempData["info"] = "Formu doldurun lütfen.";
+            ViewBag.Categories = GetCategoriesSelectList();
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([FromForm] ProductDtoForInsertion productDto, IFormFile file)
         {
             if (ModelState.IsValid)
             {
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", file.FileName);
-                using (var stream = new FileStream(path, FileMode.Create))
+                // file operation
+                string path = Path.Combine(Directory.GetCurrentDirectory(),
+                "wwwroot","images",file.FileName);
+
+                using (var stream = new FileStream(path,FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }
-                productDto.ImageUrl = String.Concat("/images/", file.FileName);
-
+                productDto.ImageUrl = String.Concat("/images/",file.FileName);
                 _manager.ProductService.CreateProduct(productDto);
+                TempData["success"] = $"{productDto.ProductName} oluşturuldu.";
                 return RedirectToAction("Index");
             }
             return View();
         }
-
-        private SelectList GetCategoriesList()
+        private SelectList GetCategoriesSelectList()
         {
             return new SelectList(_manager.CategoryService.GetAllCategories(false),
             "CategoryId",
             "CategoryName", "1");
         }
 
-        [HttpGet]
+
         public IActionResult Update([FromRoute(Name = "id")] int id)
         {
-            ViewBag.Categories = GetCategoriesList();
+            ViewBag.Categories = GetCategoriesSelectList();
             var model = _manager.ProductService.GetOneProductForUpdate(id, false);
+            ViewData["Title"] = model?.ProductName;
             return View(model);
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -70,24 +88,29 @@ namespace AyisigiApp.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", file.FileName);
-                using (var stream = new FileStream(path, FileMode.Create))
+                // file operation
+                string path = Path.Combine(Directory.GetCurrentDirectory(),
+                "wwwroot","images",file.FileName);
+
+                using (var stream = new FileStream(path,FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }
-                productDto.ImageUrl = String.Concat("/images/", file.FileName);
+                productDto.ImageUrl = String.Concat("/images/",file.FileName);
+
                 _manager.ProductService.UpdateOneProduct(productDto);
                 return RedirectToAction("Index");
-
             }
             return View();
         }
+
+
         [HttpGet]
         public IActionResult Delete([FromRoute(Name = "id")] int id)
         {
             _manager.ProductService.DeleteOneProduct(id);
+            TempData["danger"] = "kaldırıldı.";
             return RedirectToAction("Index");
         }
-
     }
 }

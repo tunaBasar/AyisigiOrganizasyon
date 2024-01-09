@@ -1,15 +1,19 @@
 ﻿using System.Reflection;
 using Entities.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Config;
 
 namespace Repositories;
 
-public class RepositoryContext : DbContext
+public class RepositoryContext : IdentityDbContext<IdentityUser>
 {
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
-    public DbSet<Category> Customers { get; set; }
+    public DbSet<Order> Orders { get; set; }
+
+    
 
     public RepositoryContext(DbContextOptions<RepositoryContext> options)
     : base(options)
@@ -20,7 +24,8 @@ public class RepositoryContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            
+         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 }
 
