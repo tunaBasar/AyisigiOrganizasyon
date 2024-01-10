@@ -1,29 +1,29 @@
 @model UserDtoForCreation
 
 <div class="text-center my-5">
-    <div class="display-6">Create User</div>
+    <div class="display-6">Kullanıcı Oluştur</div>
 </div>
 
 <form method="post" asp-action="Create">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group my-3">
-                <label asp-for="UserName"></label>
+                <label asp-for="UserName">Kullanıcı Adı</label>
                 <input asp-for="UserName" class="form-control" />
             </div>
 
             <div class="form-group my-3">
-                <label asp-for="Email"></label>
+                <label asp-for="Email">Mail</label>
                 <input asp-for="Email" class="form-control" />
             </div>
 
             <div class="form-group my-3">
-                <label asp-for="Password"></label>
+                <label asp-for="Password">Şifre</label>
                 <input asp-for="Password" class="form-control" />
             </div>
 
             <div class="form-group my-3">
-                <label asp-for="PhoneNumber"></label>
+                <label asp-for="PhoneNumber">Telefon Numarası</label>
                 <input asp-for="PhoneNumber" class="form-control" />
             </div>
 
@@ -32,7 +32,7 @@
                     <input type="submit" class="btn btn-primary" />
                     <a asp-action="Index" class="btn btn-outline-primary">
                         <i class="fa fa-solid fa-arrow-left"></i>
-                        Back
+                        Geri
                     </a>
                 </div>
             </div>
@@ -40,7 +40,7 @@
         </div>
         <div class="col-md-6">
             <div class="lead p-2 mt-2">
-                Roles
+                Roller
                 @foreach (var item in Model.Roles)
                 {
                     <div class="form-check my-2">

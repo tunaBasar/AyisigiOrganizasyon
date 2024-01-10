@@ -24,7 +24,7 @@ namespace AyisigiApp.Infrastructure.TagHelpers
             div.Attributes.Add("class","my-3");
            
             TagBuilder h6 = new TagBuilder("h6");
-            h6.Attributes.Add("class","lead");
+            h6.Attributes.Add("class","text-light");
 
             TagBuilder icon = new TagBuilder("i");
             icon.Attributes.Add("class","fa fa-box text-light");

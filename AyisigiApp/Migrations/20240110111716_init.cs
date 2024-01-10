@@ -245,9 +245,9 @@ namespace AyisigiApp.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "20aad886-bec9-4bc4-a230-625a15faa47f", null, "User", "USER" },
-                    { "86704ebc-214c-4f73-968c-bea3f2c22c1e", null, "Admin", "ADMIN" },
-                    { "8c4415f6-16da-41e4-9f2d-95660b2058b9", null, "Editor", "EDITOR" }
+                    { "705af51f-5029-43a3-b2a3-543664f33d2f", null, "User", "USER" },
+                    { "c885b57d-a9f5-4196-877a-8014160dafb5", null, "Editor", "EDITOR" },
+                    { "fee339cc-570a-47a9-ab11-fab140ce684c", null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -266,13 +266,22 @@ namespace AyisigiApp.Migrations
                 columns: new[] { "ProductId", "CategoryId", "ImageUrl", "ProductName", "ProductPrice", "ShowCase", "Summary" },
                 values: new object[,]
                 {
-                    { 1, 2, "/images/1.png", "Ottoman Wedding", 30000m, false, "" },
-                    { 2, 2, "/images/2.png", "Romanian Wedding", 32000m, false, "" },
-                    { 3, 2, "/images/3.png", "Russian Wedding", 20000m, false, "" },
-                    { 4, 2, "/images/4.png", "French Wedding", 15000m, false, "" },
-                    { 5, 2, "/images/5.png", "Standart Turkish Wedding", 7000m, false, "" },
-                    { 6, 1, "/images/6.png", "Nordic Wedding", 10000m, false, "" },
-                    { 7, 1, "/images/7.png", "Chair", 100m, false, "" }
+                    { 1, 1, "/images/5.png", "Eski Türk Tarzı Düğün Paketi", 500000m, true, "" },
+                    { 2, 1, "/images/3.png", "Fransız Düğün Paketi", 300000m, true, "" },
+                    { 3, 1, "/images/2.png", "İskandinav Düğün Paketi", 400000m, true, "" },
+                    { 4, 3, "/images/ottomanweddingchair.png", "Sandalye 1x100", 1000m, false, "" },
+                    { 5, 3, "/images/8.png", "Sandalye 2x100", 1000m, false, "" },
+                    { 6, 3, "/images/9.png", "Sandalye 3x100", 100m, false, "" },
+                    { 7, 3, "/images/10.png", "Masa 1x25", 1000m, false, "" },
+                    { 8, 3, "/images/11.png", "Masa 2x25", 1000m, false, "" },
+                    { 9, 3, "/images/12.png", "Masa 3x25", 1000m, false, "" },
+                    { 10, 2, "/images/13.png", "Düğün Salonu 1", 10000m, true, "" },
+                    { 11, 2, "/images/16.png", "Gemi Düğün Salonu 1", 10000m, true, "" },
+                    { 12, 2, "/images/14.png", "Düğün Salonu 3", 10000m, true, "" },
+                    { 13, 2, "/images/17.png", "Gemi Düğün Salonu 3", 10000m, true, "" },
+                    { 14, 4, "/images/18.png", "Pasta 1", 2000m, true, "" },
+                    { 15, 4, "/images/19.png", "Pasta 2", 2000m, false, "" },
+                    { 16, 4, "/images/20.png", "Pasta 3", 2000m, false, "" }
                 });
 
             migrationBuilder.CreateIndex(

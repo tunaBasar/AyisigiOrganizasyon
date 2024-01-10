@@ -10,7 +10,7 @@ namespace Entities.Dtos
         public String? ProductName { get; init; } = String.Empty;
 
         [Required(ErrorMessage = "Fiyat bilgisi gerekli.")]
-        public decimal Price { get; init; }
+        public decimal ProductPrice { get; init; }
         public String? Summary { get; init; } = String.Empty;
         public String? ImageUrl { get; set; }
         public int? CategoryId { get; init; }  

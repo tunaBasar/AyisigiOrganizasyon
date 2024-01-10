@@ -29,10 +29,10 @@
                 <td user-name="@user.UserName" user-role=""></td>
                 <td>
                     <div class="btn-group">
-                        <a class="btn btn btn-warning rounded-0" asp-action="Update" asp-route-id="@user.UserName">
+                        <a class="btn btn btn-warning rounded-start" asp-action="Update" asp-route-id="@user.UserName">
                             <i class="fa fa-solid fa-edit"></i>
                             Güncelle</a>
-                        <a class="btn btn btn-info rounded-0" asp-action="ResetPassword" asp-route-id="@user.UserName">
+                        <a class="btn btn btn-info " asp-action="ResetPassword" asp-route-id="@user.UserName">
                             <i class="fa fa-solid fa-edit"></i>
                             Şifre değiştir</a>
                         <form method="post" asp-action="DeleteOneUser">

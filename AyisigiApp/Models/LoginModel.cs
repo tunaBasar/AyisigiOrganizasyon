@@ -6,9 +6,9 @@ namespace AyisigiApp.Models
     {
         private string? _returnurl;
 
-        [Required(ErrorMessage = "Name is required.")]
+        [Required(ErrorMessage = "isim gerekli.")]
         public string? Name { get; set; }
-        [Required(ErrorMessage = "Password is required.")]
+        [Required(ErrorMessage = "Şifre gerekli.")]
         public string? Password { get; set; }
 
         public string ReturnUrl
