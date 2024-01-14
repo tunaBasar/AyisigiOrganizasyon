@@ -48,7 +48,8 @@
         <a class="custom-btn btn-3" aria-current="page" asp-page="/Contact">İletişim</a>
         <a class="custom-btn btn-3" aria-current="page" asp-area="" asp-page="/Cart">
           <i class="fa-solid fa-cart-shopping"></i>Sepet(@await Component.InvokeAsync("CartSummary"))</a>
-        <button class="custom-btn btn-3" <partial name="_LoginMenu" />
+         <button class="custom-btn btn-3"<partial name="_LoginMenu">
+          @* <partial name="_LoginMenu"> *@
       </div>
     </bay>
   </div>
